@@ -32,7 +32,7 @@ public class HomeTabFragment extends BaseFragment {
     protected void onPrepare() {
         Bundle bundle = getArguments();
         mTab = (TabBean) bundle.getSerializable("tab");
-        mTabAdapter = new HomeTabAdapter(getContext());
+        mTabAdapter = new HomeTabAdapter(getContext(),getChildFragmentManager());
         mRecycler.setLayoutManager(new LinearLayoutManager(getContext()));
         mRecycler.setAdapter(mTabAdapter);
     }

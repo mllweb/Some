@@ -77,8 +77,7 @@ public class HomeFragment extends BaseFragment implements HomeFragView {
                 params.leftMargin = (int) (params.width * position + params.width * positionOffset);
                 mTabLine.setLayoutParams(params);
                 if (position >= 2) {
-                    int i = (int) (params.width * (position - 2) + params.width * positionOffset);
-                    mTabScrollView.scrollTo(i, 0);
+                    mTabScrollView.scrollTo((int) (params.width * (position - 2) + params.width * positionOffset), 0);
                 } else {
                     mTabScrollView.scrollTo(0, 0);
                 }
