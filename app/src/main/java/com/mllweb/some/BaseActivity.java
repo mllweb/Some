@@ -16,6 +16,7 @@ public abstract class BaseActivity extends AutoLayoutActivity {
         super.onCreate(savedInstanceState);
         setContentView(onLayout());
         ButterKnife.inject(this);
+        onPresenter();
         onPrepare();
         onEvent();
     }
@@ -27,4 +28,6 @@ public abstract class BaseActivity extends AutoLayoutActivity {
 
     protected void onPrepare() {
     }
+
+    protected abstract void onPresenter();
 }

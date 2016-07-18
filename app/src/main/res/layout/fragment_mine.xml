@@ -6,6 +6,6 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="144px"
-        android:background="@color/white" />`
+        android:layout_height="@dimen/actionBarHeight"
+        android:background="@color/actionBar" />`
 </LinearLayout>

@@ -2,4 +2,10 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="bottomTabLayoutHeight">160px</dimen>
+    <dimen name="bottomTabTextHeight">60px</dimen>
+    <dimen name="bottomTabTextSize">35px</dimen>
+    <dimen name="bottomTabIconHeight">100px</dimen>
+    <dimen name="actionBarHeight">144px</dimen>
+
 </resources>

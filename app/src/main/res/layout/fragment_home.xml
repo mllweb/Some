@@ -6,6 +6,53 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="144px"
-        android:background="@color/white" />
+        android:layout_height="@dimen/actionBarHeight"
+        android:background="@color/actionBar">
+
+        <HorizontalScrollView
+            android:id="@+id/tabScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/tabConfig"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/tabLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <View
+                    android:id="@+id/tabLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="8px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/white" />
+            </RelativeLayout>
+        </HorizontalScrollView>
+
+        <RelativeLayout
+            android:id="@id/tabConfig"
+            android:layout_width="@dimen/actionBarHeight"
+            android:layout_height="@dimen/actionBarHeight"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/ic_launcher" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <com.mllweb.some.widget.ScrollViewPager
+        android:id="@+id/tabPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </LinearLayout>

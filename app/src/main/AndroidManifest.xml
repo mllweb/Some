@@ -11,17 +11,19 @@
         android:theme="@style/AppTheme">
         <meta-data
             android:name="design_width"
-            android:value="1080"></meta-data>
+            android:value="1080" />
         <meta-data
             android:name="design_height"
-            android:value="1920"></meta-data>
+            android:value="1920" />
 
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
+
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.HomeTabConfigActivity"></activity>
     </application>
 
 </manifest>

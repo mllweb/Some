@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.v4.view.ViewPager
+    <com.mllweb.some.widget.ScrollViewPager
         android:id="@+id/tabPager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -19,9 +19,9 @@
     <LinearLayout
         android:id="@id/bottomLayout"
         android:layout_width="match_parent"
-        android:layout_height="160px"
+        android:layout_height="@dimen/bottomTabLayoutHeight"
         android:layout_alignParentBottom="true"
-        android:background="@color/white"
+        android:background="@color/bottomTab"
         android:orientation="horizontal">
 
         <LinearLayout
@@ -33,15 +33,16 @@
             <ImageView
                 android:id="@+id/homeIcon"
                 android:layout_width="match_parent"
-                android:layout_height="100px"
+                android:layout_height="@dimen/bottomTabIconHeight"
                 android:src="@mipmap/ic_launcher" />
 
             <TextView
                 android:id="@+id/homeText"
                 android:layout_width="match_parent"
-                android:layout_height="60px"
+                android:layout_height="@dimen/bottomTabTextHeight"
                 android:gravity="center"
-                android:text="@string/home" />
+                android:text="@string/home"
+                android:textSize="@dimen/bottomTabTextSize" />
         </LinearLayout>
 
         <LinearLayout
@@ -53,15 +54,16 @@
             <ImageView
                 android:id="@+id/followIcon"
                 android:layout_width="match_parent"
-                android:layout_height="100px"
+                android:layout_height="@dimen/bottomTabIconHeight"
                 android:src="@mipmap/ic_launcher" />
 
             <TextView
                 android:id="@+id/followText"
                 android:layout_width="match_parent"
-                android:layout_height="60px"
+                android:layout_height="@dimen/bottomTabTextHeight"
                 android:gravity="center"
-                android:text="@string/follow" />
+                android:text="@string/follow"
+                android:textSize="@dimen/bottomTabTextSize" />
         </LinearLayout>
 
         <LinearLayout
@@ -73,15 +75,16 @@
             <ImageView
                 android:id="@+id/findIcon"
                 android:layout_width="match_parent"
-                android:layout_height="100px"
+                android:layout_height="@dimen/bottomTabIconHeight"
                 android:src="@mipmap/ic_launcher" />
 
             <TextView
                 android:id="@+id/findText"
                 android:layout_width="match_parent"
-                android:layout_height="60px"
+                android:layout_height="@dimen/bottomTabTextHeight"
                 android:gravity="center"
-                android:text="@string/find" />
+                android:text="@string/find"
+                android:textSize="@dimen/bottomTabTextSize" />
         </LinearLayout>
 
         <LinearLayout
@@ -93,15 +96,16 @@
             <ImageView
                 android:id="@+id/mineIcon"
                 android:layout_width="match_parent"
-                android:layout_height="100px"
+                android:layout_height="@dimen/bottomTabIconHeight"
                 android:src="@mipmap/ic_launcher" />
 
             <TextView
                 android:id="@+id/mineText"
                 android:layout_width="match_parent"
-                android:layout_height="60px"
+                android:layout_height="@dimen/bottomTabTextHeight"
                 android:gravity="center"
-                android:text="@string/mine" />
+                android:text="@string/mine"
+                android:textSize="@dimen/bottomTabTextSize" />
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>
